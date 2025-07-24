@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.change_color {
+  color: #1E3A8A;
+}
+
+/* HEADER */
+header {
+  background-color: #1E3A8A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.subtitulos {
+  color: #1E3A8A;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.item_menu {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+/* CONTAINERS */
+.container_cinza {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container_branco {
+  background-color: #e4e4e467;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* SOBRE MIM */
+.sobremim {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.container_sobremim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.foto_perfil {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.texto_sobre {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #374151;
+  text-align: justify;
+  min-width: 250px;
+}
+
+/* GALERIA CERTIFICAÇÕES */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  /* mantém centralizado e com limite */
+  margin: 0 auto 3rem auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #f4f4f5;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1rem;
+  padding: 10px 5px 0;
+  color: #111827;
+}
+
+/* PROJETOS */
+.projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.project-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  color: #111827;
+  margin: 5px 0;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.project-link {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #1E3A8A;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: bottom 0.3s ease;
+}
+
+.project-card:hover .project-link {
+  bottom: 0;
+}
+
+/* CONTATOS */
+.contact-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto 3rem auto;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1E3A8A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 130px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card.linkedin i,
+.contact-card.linkedin:hover {
+  color: #0077B5;
+}
+
+.contact-card.email i,
+.contact-card.email:hover {
+  color: #D44638;
+}
+
+.contact-card.github i,
+.contact-card.github:hover {
+  color: #333;
+}
+
+.contact-card.instagram i,
+.contact-card.instagram:hover {
+  color: #C13584;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media (max-width: 900px) {
+  .navbar_menu {
+    display: none;
+  }
+
+  .container_sobremim {
+    width: 95%;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto_perfil {
+    width: 250px;
+    height: 250px;
+  }
+
+  .gallery,
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 95%;
+  }
+
+  .contact-cards {
+    gap: 1rem;
+  }
+
+  .contact-card {
+    min-width: 120px;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .contact-card i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .container_sobremim {
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .foto_perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gallery,
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .contact-card {
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .contact-card i {
+    font-size: 1.6rem;
+  }
+}
