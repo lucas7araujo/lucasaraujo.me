@@ -129,7 +129,7 @@ header {
     font-family: 'Segoe UI', sans-serif;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    min-width: 90px;
+    min-width: 140px;
     text-align: center;
     justify-content: center;
 }
