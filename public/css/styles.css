@@ -329,6 +329,7 @@ header {
 
 .texto-sobre {
     flex: 1;
+    text-align: justify;
     font-size: 1.05rem;
     font-family: 'Merriweather Sans';
     line-height: 1.6;
